@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description"
+        content="Menú del día en Restaurante Máncora - Entradas, fondos y agregados por solo $5.500">
+    <meta name="keywords" content="menú del día, restaurante chileno, comida casera, cazuela, lentejas, ceviche">
+    <title>Máncora | Menú del Día</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🔥</span>
+                <span class="logo-text">Máncora</span>
+            </a>
+            <!-- Botón hamburguesa para móvil -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#entradas">Entradas</a></li>
+                <li><a href="#fondos">Fondos</a></li>
+                <li><a href="#agregados">Agregados</a></li>
+                <li><a href="#contacto-redes">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO con precio -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">✦ Restaurante Máncora ✦</p>
+            <h1 class="hero-title">MENÚ DEL DÍA</h1>
+            <div class="price-badge">
+                <span class="price-symbol">$</span>
+                <span class="price-amount">5.500</span>
+                <span class="price-currency">CLP</span>
+            </div>
+            <p class="hero-desc">
+                <span class="hero-tag">Entrada</span>
+                <span class="hero-separator">+</span>
+                <span class="hero-tag">Fondo</span>
+                <span class="hero-separator">+</span>
+                <span class="hero-tag">Agregado</span>
+            </p>
+            <p class="hero-tagline">Sabor casero con tradición chilena 🇨🇱</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- ENTRADAS -->
+        <section id="entradas" class="section">
+            <div class="section-header">
+                <span class="section-icon">🥣</span>
+                <h2 class="section-title">Entradas</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="card-grid">
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img" src="https://placehold.co/400x240/e6c9a8/5a3e28?text=Cazuela+de+Vacuno"
+                            alt="Cazuela de vacuno" loading="lazy">
+                        <div class="dish-badge">Popular</div>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Cazuela de vacuno</div>
+                        <div class="dish-desc">Tradicional sopa con carne, zapallo, papas y choclo.</div>
+                    </div>
+                </div>
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img" src="https://placehold.co/400x240/dbbd96/5a3e28?text=Pantruca"
+                            alt="Pantruca" loading="lazy">
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Pantruca</div>
+                        <div class="dish-desc">Caldo nutritivo con masa de trigo, verduras y carne.</div>
+                    </div>
+                </div>
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img" src="https://placehold.co/400x240/c2e0b0/3e5c2a?text=Ensalada+Mixta"
+                            alt="Ensalada mixta" loading="lazy">
+                        <div class="dish-badge fresh">Fresco</div>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Ensalada mixta</div>
+                        <div class="dish-desc">Lechuga, tomate, zanahoria y aderezo de la casa.</div>
+                    </div>
+                </div>
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img" src="https://placehold.co/400x240/f2c6b6/b54c2c?text=Ceviche+de+Atun"
+                            alt="Ceviche de atún" loading="lazy">
+                        <div class="dish-badge special">Especial</div>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Ceviche de atún</div>
+                        <div class="dish-desc">Fresco, con limón, cilantro, cebolla morada y ají.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FONDO / COLACIÓN -->
+        <section id="fondos" class="section">
+            <div class="section-header">
+                <span class="section-icon">🍽️</span>
+                <h2 class="section-title">Fondo / Colación</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="card-grid">
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img"
+                            src="https://placehold.co/400x240/c48a5c/442a18?text=Lentejas+con+Bistec"
+                            alt="Lentejas con bistec" loading="lazy">
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Lentejas con bistec</div>
+                        <div class="dish-desc">Guiso de lentejas + bistec a la plancha.</div>
+                    </div>
+                </div>
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img" src="https://placehold.co/400x240/e2b886/573c1f?text=Pollo+al+Horno"
+                            alt="Pollo al horno" loading="lazy">
+                        <div class="dish-badge">Popular</div>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Pollo al horno con ensalada Rusa</div>
+                        <div class="dish-desc">Jugoso pollo horneado + papas, zanahoria y arvejas.</div>
+                    </div>
+                </div>
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img"
+                            src="https://placehold.co/400x240/d9986a/5c311c?text=Higado+encebollado"
+                            alt="Hígado encebollado" loading="lazy">
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Hígado encebollado</div>
+                        <div class="dish-desc">Cebolla caramelizada y hígado suave.</div>
+                    </div>
+                </div>
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img"
+                            src="https://placehold.co/400x240/b57040/402714?text=Chuleta+Parrilla"
+                            alt="Chuleta parrilla" loading="lazy">
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Chuleta a la parrilla</div>
+                        <div class="dish-desc">Chuleta de cerdo asada, acompañada de ensalada.</div>
+                    </div>
+                </div>
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img"
+                            src="https://placehold.co/400x240/7ca9b5/2c4c5c?text=Albacora+Frita"
+                            alt="Albacora frita" loading="lazy">
+                        <div class="dish-badge special">Del mar</div>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Albacora frita</div>
+                        <div class="dish-desc">Pescado fresco empanizado, crujiente por fuera.</div>
+                    </div>
+                </div>
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img"
+                            src="https://placehold.co/400x240/c28554/55361b?text=Guatita+Italiana"
+                            alt="Guatita italiana" loading="lazy">
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Guatita a la Italiana</div>
+                        <div class="dish-desc">Guatita en salsa de tomate, cebolla y pimentón.</div>
+                    </div>
+                </div>
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img"
+                            src="https://placehold.co/400x240/e8cf98/785e36?text=Tallarines+Alfredo"
+                            alt="Tallarín Alfredo" loading="lazy">
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Tallarín Alfredo con pollo</div>
+                        <div class="dish-desc">Salsa cremosa, queso parmesano y pollo salteado.</div>
+                    </div>
+                </div>
+                <div class="dish-card" data-animate>
+                    <div class="dish-img-wrapper">
+                        <img class="dish-img"
+                            src="https://placehold.co/400x240/b5b35c/4a5125?text=Tortilla+Verduras"
+                            alt="Tortilla verduras" loading="lazy">
+                        <div class="dish-badge fresh">Veggie</div>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-name">Tortilla de verduras</div>
+                        <div class="dish-desc">Zapallo, espinaca, cebolla y huevo campestre.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AGREGADOS -->
+        <section id="agregados" class="section">
+            <div class="section-header">
+                <span class="section-icon">🥗</span>
+                <h2 class="section-title">Agregados</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="agregados-grid">
+                <div class="agregado-item" data-animate>
+                    <img class="agregado-img" src="https://placehold.co/80x80/e0c097/735e3a?text=Arroz"
+                        alt="Arroz blanco" loading="lazy">
+                    <span>Arroz blanco</span>
+                </div>
+                <div class="agregado-item" data-animate>
+                    <img class="agregado-img" src="https://placehold.co/80x80/cfa668/6b4c28?text=Chaufa"
+                        alt="Arroz chaufa" loading="lazy">
+                    <span>Arroz chaufa</span>
+                </div>
+                <div class="agregado-item" data-animate>
+                    <img class="agregado-img"
+                        src="https://placehold.co/80x80/95b56c/2d4a1e?text=Ensalada+Surtida"
+                        alt="Ensalada surtida" loading="lazy">
+                    <span>Ensalada surtida</span>
+                </div>
+                <div class="agregado-item" data-animate>
+                    <img class="agregado-img" src="https://placehold.co/80x80/d6ae7a/543e24?text=Chilena"
+                        alt="Ensalada chilena" loading="lazy">
+                    <span>Ensalada chilena</span>
+                </div>
+                <div class="agregado-item" data-animate>
+                    <img class="agregado-img" src="https://placehold.co/80x80/f3deba/7c5d3a?text=Fideo"
+                        alt="Fideo blanco" loading="lazy">
+                    <span>Fideo blanco</span>
+                </div>
+                <div class="agregado-item" data-animate>
+                    <img class="agregado-img" src="https://placehold.co/80x80/e2b45a/704f22?text=Papa+Dorada"
+                        alt="Papa dorada" loading="lazy">
+                    <span>Papa dorada</span>
+                </div>
+                <div class="agregado-item" data-animate>
+                    <img class="agregado-img" src="https://placehold.co/80x80/e0af7c/633d1c?text=Papas+Mayo"
+                        alt="Papas mayo" loading="lazy">
+                    <span>Papas mayo</span>
+                </div>
+            </div>
+            <div class="agregados-note">
+                <i class="fas fa-utensils"></i>
+                Puedes elegir: Arroz (blanco o chaufa) · Ensalada (surtida o chilena) · Papa dorada o mayo
+            </div>
+        </section>
+
+        <!-- CONTACTO Y REDES SOCIALES -->
+        <section id="contacto-redes" class="section">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <span class="contact-icon">📱</span>
+                    <h3 class="contact-title">Síguenos y Contáctanos</h3>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/saboresdechile" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span class="social-label">Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/saboresdechile" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="social-label">Facebook</span>
+                    </a>
+                    <a href="https://wa.me/56936818881" target="_blank" rel="noopener noreferrer"
+                        class="social-icon whatsapp" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="social-label">WhatsApp</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@saboreschile" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                        <span class="social-label">TikTok</span>
+                    </a>
+                    <a href="mailto:contacto@saboresdechile.cl" class="social-icon" aria-label="Correo electrónico">
+                        <i class="fas fa-envelope"></i>
+                        <span class="social-label">Email</span>
+                    </a>
+                </div>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(569)-36818881</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Calle 21 de Mayo 1768-A, Santiago</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="far fa-clock"></i>
+                        <span>Lun-Dom 12:00 a 21:00</span>
+                    </div>
+                </div>
+                <button class="btn-whatsapp" id="whatsappOrderBtn">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Realizar Pedido por WhatsApp</span>
+                </button>
+                <p class="contact-note">✅ Consulta disponibilidad | Reservas al WhatsApp</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/56936818881" target="_blank" rel="noopener noreferrer" class="fab-whatsapp"
+        aria-label="Enviar mensaje por WhatsApp" id="fabWhatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">🔥 Máncora</div>
+            <p class="footer-text">Cocina con tradición familiar — Menú del día $5.500</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">© 2025 Restaurante Máncora. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript propio -->
+    <script src="script.js"></script>
+</body>
+
+</html>
